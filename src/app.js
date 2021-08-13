@@ -75,18 +75,6 @@ app.get('/weather', (req, res) => {
     })
 })
 
-// app.get('/product',(req,res)=>{
-//     if(!req.query.search){
-//     return res.send({
-//             errormsg:'please enter search terms'
-//         })
-//     }
-
-//     console.log(req.query.search)
-//     res.send({
-//         product:[]
-//     })
-// })
 
 //error of help page
 app.get('/help/*', (req, res) => {
@@ -110,21 +98,35 @@ app.listen(port, () => {
     console.log('server is up on port number '+port)
 })//starting the server
 
+
+// app.get('/product',(req,res)=>{
+//     if(!req.query.search){
+//     return res.send({
+//             errormsg:'please enter search terms'
+//         })
+//     }
+
+//     console.log(req.query.search)
+//     res.send({
+//         product:[]
+//     })
+// })
+
 // app.get('',(req,res)=>{
     //     res.send('<h1> Hello express </h1>')
     // })//display text on home page
-
-
+    
+    
     // app.get('/help',(req,res)=>{
         //     res.send([{
-//         name:"aaaa"
-//     },{
-//         name:"bbbbbbb",
-//         age:10
-//     }])
-// })//display text on root page
-
-
+            //         name:"aaaa"
+            //     },{
+                //         name:"bbbbbbb",
+                //         age:10
+                //     }])
+                // })//display text on root page
+                
+                
 // app.get('/about',(req,res)=>{
 //     res.send('<h1>About express </h1>')
 // })
